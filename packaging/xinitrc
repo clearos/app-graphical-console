@@ -1,2 +1,2 @@
-/usr/bin/ratpoison &
-/usr/bin/gconsole
+LANG=en_US /usr/bin/ratpoison &
+LANG=en_US /usr/bin/gconsole
