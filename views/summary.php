@@ -49,6 +49,7 @@ Here's what you need to do next:
 <img style='float:left; margin-left:15px;' src='" . clearos_app_htdocs('graphical_console') . "/browsers.png' alt=''>
 
 <br style='clear:both;' />
+<br style='clear:both;' />
 <h2 style='float:left;'>Step 1. Configure Your Network Settings</h2>
 
 <div style='float:left;'>
@@ -74,21 +75,23 @@ echo "
 </div>
 
 <br style='clear:both;' />
-<h2 style='float:left;'>Step 2. Use Your Web Browser</h2>
+<br style='clear:both;' />
+<h2 style='float:left;'>Step 2. Connect With Your Web Browser</h2>
 
 <div style='float:left; width:330px;'>
 <div style='float:left;'>
+The web-based interface can be accessed on port 81 using the secure web protocol - HTTPS. 
 ";
 
 if (empty($ip)) {
-    echo "Once your network is configured, type the following address:";
+    echo "Once your network is configured, type the address in the following format:";
 } else {
     echo "Start your web browser and type the following web address:";
 }
 
 echo "
 </div> <br/>
-<div style='margin-top: 30px; margin-left: auto; margin-right: auto; width:162px;'><h2>https://$url_ip:81/</h2></div>
+<div style='margin-top: 35px; margin-left: auto; margin-right: auto; width:162px;'><h2>https://$url_ip<span style='color: #e1852e'>:81</span></h2></div>
 </div>
 
 <img style='float:left; margin-left:15px;' src='" . clearos_app_htdocs('graphical_console') . "/webconfig.png'  alt=''>

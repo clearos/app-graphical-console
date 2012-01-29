@@ -12,6 +12,11 @@ $app['packager'] = 'ClearFoundation';
 $app['license'] = 'GPLv3';
 $app['license_core'] = 'LGPLv3';
 $app['description'] = lang('graphical_console_app_description');
+$app['inline_help'] = array(
+    lang('graphical_console_browser_warning') => lang('graphical_console_browser_warning_help'),
+    lang('graphical_console_what_next') => lang('graphical_console_what_next_help'),
+    lang('graphical_console_command_line') => lang('graphical_console_command_line_help'),
+);
 
 /////////////////////////////////////////////////////////////////////////////
 // App name and categories
