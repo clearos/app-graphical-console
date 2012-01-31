@@ -1,13 +1,11 @@
 
 Name: app-graphical-console
-Group: ClearOS/Apps
 Epoch: 1
-Version: 1.0.1
+Version: 1.0.2
 Release: 1%{dist}
 Summary: Graphical Console
 License: GPLv3
-Packager: ClearFoundation
-Vendor: ClearFoundation
+Group: ClearOS/Apps
 Source: %{name}-%{version}.tar.gz
 Buildarch: noarch
 Requires: %{name}-core = 1:%{version}-%{release}
@@ -18,8 +16,8 @@ The Graphical Console allows administrators to configure basic settings in a use
 
 %package core
 Summary: Graphical Console - APIs and install
-Group: ClearOS/Libraries
 License: LGPLv3
+Group: ClearOS/Libraries
 Requires: app-base-core
 Requires: clearos-console
 Requires: dbus-x11
