@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'graphical_console';
-$app['version'] = '1.0.2';
+$app['version'] = '1.0.4';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -44,28 +44,8 @@ $app['core_requires'] = array(
 );
 
 $app['core_file_manifest'] = array( 
-   'graphical_console' => array(
-        'target' => '/var/clearos/base/access_control/public/graphical_console',
-        'mode' => '0644',
-        'owner' => 'root',
-        'group' => 'root',
-    ),
-   'hushlogin' => array(
-        'target' => '/var/lib/clearconsole/.hushlogin',
-        'mode' => '0644',
-        'owner' => 'root',
-        'group' => 'root',
-    ),
-   'xinitrc' => array(
-        'target' => '/var/lib/clearconsole/.xinitrc',
-        'mode' => '0644',
-        'owner' => 'root',
-        'group' => 'root',
-    ),
-   'Xdefaults' => array(
-        'target' => '/var/lib/clearconsole/.Xdefaults',
-        'mode' => '0644',
-        'owner' => 'root',
-        'group' => 'root',
-    ),
+   'graphical_console' => array('target' => '/var/clearos/base/access_control/public/graphical_console'),
+   'hushlogin' => array('target' => '/var/lib/clearconsole/.hushlogin'),
+   'xinitrc' => array('target' => '/var/lib/clearconsole/.xinitrc'),
+   'Xdefaults' => array('target' => '/var/lib/clearconsole/.Xdefaults'),
 );
