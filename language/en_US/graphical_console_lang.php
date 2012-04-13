@@ -9,4 +9,4 @@ $lang['graphical_console_command_line_help'] = 'For those of you who prefer the 
 $lang['graphical_console_what_next'] = 'What Next?';
 $lang['graphical_console_what_next_help'] = 'Once you have configured your network and connected to this system with your web browser, the install wizard will take you through the steps finish the installation.';
 $lang['graphical_console_browser_warning'] = 'Web Browser Security Warning';
-$lang['graphical_console_browser_warning_help'] = 'When you connect with your web browser the first time, you will see a security warning displayed.  Please don\'t fret!  The installation wizard will take you through the process of creating your own web browser security certificates.';
+$lang['graphical_console_browser_warning_help'] = 'When you connect with your web browser the first time, you will see a security warning displayed.  Please don\'t fret!';

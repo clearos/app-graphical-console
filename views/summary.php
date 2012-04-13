@@ -38,7 +38,7 @@ echo "
 
 <h2 style='float:left;'>" . $os_name . " " . $os_version . "</h2>
 <br style='clear:both;' />
-<div style='float:left; width:215px; font-size: 10px;'>
+<div style='float:left; width:215px; font-size: 13px;'>
 
 Welcome!  This console is used to configure the network settings
 on this system.  Once you have your network up and running, you can
@@ -52,7 +52,7 @@ Here's what you need to do next:
 <br style='clear:both;' />
 <h2 style='float:left;'>Step 1. Configure Your Network Settings</h2>
 
-<div style='float:left;'>
+<div style='float:left; font-size: 13px;'>
 ";
 
 if (empty($ip)) {
@@ -66,8 +66,7 @@ It looks like you do not have an IP address available for remote connections.
 
 } else {
     echo "
-The IP address of this system is: <b>$ip</b>. <br/> If you need to change your
-network settings, you can <a style='background: transparent; border: none; float: none; padding: 0; margin: 0; color: #e1852e;' href='/app/network'>login to access the Network Console</a>.
+The IP address of this system is: <b>$ip</b>. <br/> If you need to change your settings, you can <a style='background: transparent; border: none; float: none; padding: 0; margin: 0; color: #e1852e;' href='/app/network'>login to access the Network Console</a>.
 ";
 }
 
@@ -79,7 +78,7 @@ echo "
 <h2 style='float:left;'>Step 2. Connect With Your Web Browser</h2>
 
 <div style='float:left; width:330px;'>
-<div style='float:left;'>
+<div style='float:left; font-size: 13px;'>
 The web-based interface can be accessed on port 81 using the secure web protocol - HTTPS. 
 ";
 
@@ -91,7 +90,7 @@ if (empty($ip)) {
 
 echo "
 </div> <br/>
-<div style='margin-top: 35px; margin-left: auto; margin-right: auto; width:162px;'><h2>https://$url_ip<span style='color: #e1852e'>:81</span></h2></div>
+<div style='margin-top: 55px; margin-left: auto; margin-right: auto; width:162px;'><h2>https://$url_ip<span style='color: #e1852e'>:81</span></h2></div>
 </div>
 
 <img style='float:left; margin-left:15px;' src='" . clearos_app_htdocs('graphical_console') . "/webconfig.png'  alt=''>
