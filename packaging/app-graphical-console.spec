@@ -1,7 +1,7 @@
 
 Name: app-graphical-console
 Epoch: 1
-Version: 1.0.10
+Version: 1.1.0
 Release: 1%{dist}
 Summary: Graphical Console
 License: GPLv3
@@ -15,7 +15,7 @@ Requires: app-base
 The Graphical Console allows administrators to configure basic settings in a user-friendly graphical environment
 
 %package core
-Summary: Graphical Console - APIs and install
+Summary: Graphical Console - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
