@@ -74,7 +74,7 @@ class Graphical_Console extends ClearOS_Controller
         try {
             $data['lan_ips'] = $this->iface_manager->get_most_trusted_ips();
             $data['os_name'] = $this->os->get_name();
-            $data['os_version'] = $this->os->get_version();
+            $data['os_version'] = preg_replace('/\s*\(Final\)/', '', $this->os->get_version());
         } catch (Engine_Exception $e) {
             $this->page->view_exception($e);
             return;
