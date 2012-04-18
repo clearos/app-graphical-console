@@ -61,6 +61,10 @@ class Graphical_Console extends ClearOS_Controller
         if (! (clearos_console() || ($_SERVER['SERVER_PORT'] == 1501)))
             redirect('/base/session/login');
 
+        // TODO: use API instead
+        if (file_exists('/var/clearos/clearcenter/registered'))
+            redirect('/app/network');
+
         // Load libraries
         //---------------
 
