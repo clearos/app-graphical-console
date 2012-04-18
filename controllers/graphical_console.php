@@ -62,7 +62,7 @@ class Graphical_Console extends ClearOS_Controller
             redirect('/base/session/login');
 
         // TODO: use API instead
-        if (file_exists('/var/clearos/clearcenter/registered'))
+        if (file_exists('/var/clearos/registration/registered'))
             redirect('/app/network');
 
         // Load libraries
