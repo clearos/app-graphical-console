@@ -66,7 +66,7 @@ It looks like you do not have an IP address available for remote connections.
 
 } else {
     echo "
-The IP address of this system is: <b>$ip</b>. <br/> If you need to change your settings, you can <a style='background: transparent; border: none; float: none; padding: 0; margin: 0; color: #e1852e;' href='/app/network'>login to access the Network Console</a>.
+The IP address of this system is: <b>$ip</b>. <br/> If you need to change your settings, you can <a href='/app/network'>login to access the Network Console</a>.
 ";
 }
 
