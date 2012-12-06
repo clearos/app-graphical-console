@@ -1,2 +1,3 @@
+find /var/lib/clearconsole/.mozilla -name cert8.db -exec rm -fv {} \; &
 LANG=en_US /usr/bin/ratpoison &
 LANG=en_US /usr/bin/gconsole
