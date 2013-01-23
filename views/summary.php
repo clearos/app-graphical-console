@@ -38,36 +38,23 @@ echo "
 
 <h2 style='float:left;'>" . $os_name . " " . $os_version . "</h2>
 <br style='clear:both;' />
-<div style='float:left; width:215px; font-size: 13px;'>
-
-Welcome!  This console is used to configure the network settings
-on this system.  Once you have your network up and running, you can
-install, configure and manage apps using a standard web browser.
-Here's what you need to do next:
-</div> 
-
+<div style='float:left; width:215px; font-size: 13px;'>" . lang('graphical_console_welcome_message') . "</div> 
 <img style='float:left; margin-left:15px;' src='" . clearos_app_htdocs('graphical_console') . "/browsers.png' alt=''>
 
 <br style='clear:both;' />
 <br style='clear:both;' />
-<h2 style='float:left;'>Step 1. Configure Your Network Settings</h2>
+<h2 style='float:left;'>" . lang('graphical_console_step_1_description') . "</h2>
 
 <div style='float:left; font-size: 13px;'>
 ";
 
 if (empty($ip)) {
-    echo "
-It looks like you do not have an IP address available for remote connections.
-
-<p align='center'>
-" . anchor_custom('/app/network', 'Configure Network Now') . "
-</p>
-";
-
+    echo lang('graphical_console_no_ip_address_available');
+    echo "<p align='center'>" . anchor_custom('/app/network', lang('graphical_console_configure_network_now')) . "</p>";
 } else {
-    echo "
-The IP address of this system is: <b>$ip</b>. <br/> If you need to change your settings, you can <a href='/app/network'>login to access the Network Console</a>.
-";
+    echo lang('graphical_console_ip_address_is:') . " <b>$ip</b><br/>";
+    echo lang('graphical_console_followin_link_for_network_settings:') . " " .
+    "<a href='/app/network'>" . lang('graphical_console_network_console') . "</a>.";
 }
 
 echo "
@@ -75,18 +62,15 @@ echo "
 
 <br style='clear:both;' />
 <br style='clear:both;' />
-<h2 style='float:left;'>Step 2. Connect With Your Web Browser</h2>
+<h2 style='float:left;'>" . lang('graphical_console_step_2_description') . "</h2>
 
 <div style='float:left; width:330px;'>
-<div style='float:left; font-size: 13px;'>
-The web-based interface can be accessed on port 81 using the secure web protocol - HTTPS. 
-";
+<div style='float:left; font-size: 13px;'>" . lang('graphical_console_web_base_interface_access') . " ";
 
-if (empty($ip)) {
-    echo "Once your network is configured, type the address in the following format:";
-} else {
-    echo "Start your web browser and type the following web address:";
-}
+if (empty($ip))
+    echo lang('graphical_console_type_address_in_following_format:');
+else
+    echo lang('graphical_console_type_following_address:');
 
 echo "
 </div> <br/>
