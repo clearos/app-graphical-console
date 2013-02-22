@@ -52,9 +52,9 @@ if (empty($ip)) {
     echo lang('graphical_console_no_ip_address_available');
     echo "<p align='center'>" . anchor_custom('/app/network', lang('graphical_console_configure_network_now')) . "</p>";
 } else {
-    echo lang('graphical_console_ip_address_is:') . " <b>$ip</b><br/>";
-    echo lang('graphical_console_followin_link_for_network_settings:') . " " .
-    "<a href='/app/network'>" . lang('graphical_console_network_console') . "</a>.";
+    echo lang('graphical_console_ip_address:') . " <b>$ip</b><br/>";
+    echo lang('graphical_console_follow_link_to_change_settings:') . " " .
+    "<a href='/app/network'>" . lang('graphical_console_network_console') . "</a>";
 }
 
 echo "
@@ -65,7 +65,7 @@ echo "
 <h2 style='float:left;'>" . lang('graphical_console_step_2_description') . "</h2>
 
 <div style='float:left; width:330px;'>
-<div style='float:left; font-size: 13px;'>" . lang('graphical_console_web_base_interface_access') . " ";
+<div style='float:left; font-size: 13px;'>" . lang('graphical_console_web_based_interface_access') . " ";
 
 if (empty($ip))
     echo lang('graphical_console_type_address_in_following_format:');
