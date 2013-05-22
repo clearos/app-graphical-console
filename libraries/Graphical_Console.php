@@ -3,9 +3,9 @@
 /**
  * Graphical console class.
  *
- * @category   Apps
- * @package    Graphical_Console
- * @subpackage Libraries
+ * @category   apps
+ * @package    graphical-console
+ * @subpackage libraries
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2008-2011 ClearFoundation
  * @license    http://www.gnu.org/copyleft/lgpl.html GNU Lesser General Public License version 3 or later
@@ -68,9 +68,9 @@ clearos_load_library('base/Software');
 /**
  * Graphical console class.
  *
- * @category   Apps
- * @package    Graphical_Console
- * @subpackage Libraries
+ * @category   apps
+ * @package    graphical-console
+ * @subpackage libraries
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2008-2011 ClearFoundation
  * @license    http://www.gnu.org/copyleft/lgpl.html GNU Lesser General Public License version 3 or later

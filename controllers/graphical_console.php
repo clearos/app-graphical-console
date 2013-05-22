@@ -3,9 +3,9 @@
 /**
  * Graphical console controller.
  *
- * @category   Apps
- * @package    Graphical_Console
- * @subpackage Controllers
+ * @category   apps
+ * @package    graphical-console
+ * @subpackage controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2008-2011 ClearFoundation
  * @license    http://www.gnu.org/copyleft/lgpl.html GNU Lesser General Public License version 3 or later
@@ -36,9 +36,9 @@
 /**
  * Graphical console controller.
  *
- * @category   Apps
- * @package    Graphical_Console
- * @subpackage Controllers
+ * @category   apps
+ * @package    graphical-console
+ * @subpackage controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2008-2011 ClearFoundation
  * @license    http://www.gnu.org/copyleft/lgpl.html GNU Lesser General Public License version 3 or later
