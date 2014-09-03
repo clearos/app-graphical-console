@@ -1,7 +1,7 @@
 
 Name: app-graphical-console
 Epoch: 1
-Version: 1.5.0
+Version: 1.6.5
 Release: 1%{dist}
 Summary: Graphical Console
 License: GPLv3
@@ -82,7 +82,6 @@ exit 0
 %files core
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/graphical_console/packaging
-%exclude /usr/clearos/apps/graphical_console/tests
 %dir /usr/clearos/apps/graphical_console
 /usr/clearos/apps/graphical_console/deploy
 /usr/clearos/apps/graphical_console/language
