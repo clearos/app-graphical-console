@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'graphical_console';
-$app['version'] = '2.0.1';
+$app['version'] = '2.0.5';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -30,7 +30,10 @@ $app['menu_enabled'] = FALSE;
 /////////////////////////////////////////////////////////////////////////////
 // Packaging
 /////////////////////////////////////////////////////////////////////////////
-//    'mesa-dri-drivers',
+
+$app['requires'] = array(
+    'app-network',
+);
 
 $app['core_requires'] = array(
     'clearos-console',
@@ -38,7 +41,7 @@ $app['core_requires'] = array(
     'gconsole',
     'ratpoison',
     'urw-fonts',
-    'xorg-x11-drv-vesa',
+    'xorg-x11-drivers',
     'xorg-x11-server-Xorg',
     'xorg-x11-xinit',
 );

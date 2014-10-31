@@ -1,7 +1,7 @@
 
 Name: app-graphical-console
 Epoch: 1
-Version: 2.0.1
+Version: 2.0.5
 Release: 1%{dist}
 Summary: Graphical Console
 License: GPLv3
@@ -10,6 +10,7 @@ Source: %{name}-%{version}.tar.gz
 Buildarch: noarch
 Requires: %{name}-core = 1:%{version}-%{release}
 Requires: app-base
+Requires: app-network
 
 %description
 The Graphical Console allows administrators to configure basic settings in a user-friendly graphical environment
@@ -24,7 +25,7 @@ Requires: dbus-x11
 Requires: gconsole
 Requires: ratpoison
 Requires: urw-fonts
-Requires: xorg-x11-drv-vesa
+Requires: xorg-x11-drivers
 Requires: xorg-x11-server-Xorg
 Requires: xorg-x11-xinit
 
