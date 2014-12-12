@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# FIXME
+# Quick workaround for startx / gconsole weirdness
+#-------------------------------------------------
+
+if [ -x /usr/bin/startx ]; then
+    sed -i -e  '/./,$!d' /usr/bin/startx
+fi
