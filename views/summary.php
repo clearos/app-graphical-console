@@ -34,23 +34,20 @@ $ip = $lan_ips['0']; // TODO: handle more scenarios
 $url_ip = (empty($ip)) ? 'w.x.y.z' : $ip;
 
 echo "
-<div align='left' class='graphical-console-content'>
 
-<h2 style='float:left;'>" . $os_name . " " . $os_version . "</h2>
-<br style='clear:both;' />
-<div style='float:left; width:215px; font-size: 13px;'>" . lang('graphical_console_welcome_message') . "</div> 
+<h2 class='box-title'>" . $os_name . " " . $os_version . "</h2>
+<div style='float:left; width:350px; font-size: 13px;'>" . lang('graphical_console_welcome_message') . "</div> 
 <img style='float:left; margin-left:15px;' src='" . clearos_app_htdocs('graphical_console') . "/browsers.png' alt=''>
-
 <br style='clear:both;' />
 <br style='clear:both;' />
-<h2 style='float:left;'>" . lang('graphical_console_step_1_description') . "</h2>
 
+<h2 class='box-title'>" . lang('graphical_console_step_1_description') . "</h2>
 <div style='float:left; font-size: 13px;'>
 ";
 
 if (empty($ip)) {
     echo lang('graphical_console_no_ip_address_available');
-    echo "<p align='center'>" . anchor_custom('/app/network', lang('graphical_console_configure_network_now')) . "</p>";
+    echo "<p style='margin-top: 10px' align='center'>" . anchor_custom('/app/network', lang('graphical_console_configure_network_now')) . "</p>";
 } else {
     echo lang('graphical_console_ip_address:') . " <b>$ip</b><br/>";
     echo lang('graphical_console_follow_link_to_change_settings:') . " " .
@@ -62,9 +59,9 @@ echo "
 
 <br style='clear:both;' />
 <br style='clear:both;' />
-<h2 style='float:left;'>" . lang('graphical_console_step_2_description') . "</h2>
+<h2 class='box-title'>" . lang('graphical_console_step_2_description') . "</h2>
 
-<div style='float:left; width:330px;'>
+<div style='float:left; width:350px;'>
 <div style='float:left; font-size: 13px;'>" . lang('graphical_console_web_based_interface_access') . " ";
 
 if (empty($ip))
@@ -74,10 +71,9 @@ else
 
 echo "
 </div> <br/>
-<div style='margin-top: 55px; margin-left: auto; margin-right: auto; width:162px;'><h2>https://$url_ip<span style='color: #e1852e'>:81</span></h2></div>
+<div style='margin-top: 55px; margin-left: auto; margin-right: auto; width:162px; font-weight:bold'>https://$url_ip<span style='color: #e1852e'>:81</span></div>
 </div>
 
 <img style='float:left; margin-left:15px;' src='" . clearos_app_htdocs('graphical_console') . "/webconfig.png'  alt=''>
 
-</div>
 ";
