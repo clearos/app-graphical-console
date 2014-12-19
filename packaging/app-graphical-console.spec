@@ -1,7 +1,7 @@
 
 Name: app-graphical-console
 Epoch: 1
-Version: 2.0.7
+Version: 2.0.8
 Release: 1%{dist}
 Summary: Graphical Console
 License: GPLv3
