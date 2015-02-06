@@ -7,3 +7,8 @@
 if [ -x /usr/bin/startx ]; then
     sed -i -e  '/./,$!d' /usr/bin/startx
 fi
+
+# FIXME: tconsole should use new path
+if [ ! -e /usr/sbin/iptraf ]; then
+    ln -sf /usr/sbin/iptraf-ng /usr/bin/iptraf
+fi
