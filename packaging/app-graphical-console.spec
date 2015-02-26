@@ -1,7 +1,7 @@
 
 Name: app-graphical-console
 Epoch: 1
-Version: 1.6.9
+Version: 1.6.10
 Release: 1%{dist}
 Summary: Graphical Console
 License: GPLv3
@@ -41,6 +41,8 @@ This package provides the core API and libraries.
 mkdir -p -m 755 %{buildroot}/usr/clearos/apps/graphical_console
 cp -r * %{buildroot}/usr/clearos/apps/graphical_console/
 
+install -d -m 0755 %{buildroot}/var/clearos/graphical_console
+install -d -m 0755 %{buildroot}/var/clearos/graphical_console/backup
 install -D -m 0644 packaging/Xdefaults %{buildroot}/var/lib/clearconsole/.Xdefaults
 install -D -m 0644 packaging/graphical_console %{buildroot}/var/clearos/base/access_control/public/graphical_console
 install -D -m 0644 packaging/hushlogin %{buildroot}/var/lib/clearconsole/.hushlogin
@@ -83,6 +85,8 @@ exit 0
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/graphical_console/packaging
 %dir /usr/clearos/apps/graphical_console
+%dir /var/clearos/graphical_console
+%dir /var/clearos/graphical_console/backup
 /usr/clearos/apps/graphical_console/deploy
 /usr/clearos/apps/graphical_console/language
 /usr/clearos/apps/graphical_console/libraries

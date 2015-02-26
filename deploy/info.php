@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'graphical_console';
-$app['version'] = '1.6.9';
+$app['version'] = '1.6.10';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -41,6 +41,11 @@ $app['core_requires'] = array(
     'xorg-x11-drv-vesa',
     'xorg-x11-server-Xorg',
     'xorg-x11-xinit',
+);
+
+$app['core_directory_manifest'] = array(
+    '/var/clearos/graphical_console' => array(),
+    '/var/clearos/graphical_console/backup' => array(),
 );
 
 $app['core_file_manifest'] = array( 

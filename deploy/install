@@ -8,5 +8,5 @@
 # VM screen resolution
 #---------------------
 
-logger -p local6.notice -t installer "app-graphical-console-core - configuration screen resolution"
-cp /usr/clearos/apps/graphical_console/deploy/vm.conf /etc/X11/xorg.conf.d/vm.conf
+logger -p local6.notice -t installer "app-graphical-console-core - auto-configure check"
+/usr/clearos/apps/graphical_console/deploy/initialize
