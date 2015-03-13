@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'graphical_console';
-$app['version'] = '1.6.10';
+$app['version'] = '1.6.11';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -53,4 +53,8 @@ $app['core_file_manifest'] = array(
    'hushlogin' => array('target' => '/var/lib/clearconsole/.hushlogin'),
    'xinitrc' => array('target' => '/var/lib/clearconsole/.xinitrc'),
    'Xdefaults' => array('target' => '/var/lib/clearconsole/.Xdefaults'),
+   'gconsole-setup' => array(
+        'target' => '/usr/sbin/gconsole-setup',
+        'mode' => '0755',
+    ),
 );

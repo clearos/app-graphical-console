@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if ( [ "$1" == "-f" ] && [ -f /etc/X11/xorg.conf.d/* ] ); then
     TIMESTAMP=`date "+%b-%d-%Y-%T"`
@@ -9,7 +9,7 @@ fi
 
 if [ ! -f /etc/X11/xorg.conf.d/* ]; then
     logger -p local6.notice -t installer "app-graphical-console-core - performing auto-configure"
-    /usr/bin/Xorg -configure
     cd /tmp/
+    /usr/bin/Xorg -configure
     mv /tmp/xorg.conf.new /etc/X11/xorg.conf.d/vm.conf
 fi

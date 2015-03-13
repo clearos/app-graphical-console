@@ -4,9 +4,3 @@
 #--------
 
 /usr/sbin/addsudo /usr/bin/killall app-graphical-console
-
-# VM screen resolution
-#---------------------
-
-logger -p local6.notice -t installer "app-graphical-console-core - auto-configure check"
-/usr/clearos/apps/graphical_console/deploy/initialize
