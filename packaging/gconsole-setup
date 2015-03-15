@@ -1,14 +1,14 @@
 #!/bin/bash
 
-if ( [ "$1" == "-f" ] && [ -f /etc/X11/xorg.conf.d/* ] ); then
+if ( [ "$1" == "-f" ] && [ -f /etc/X11/xorg.conf.d/vm.conf ] ); then
     TIMESTAMP=`date "+%b-%d-%Y-%T"`
     logger -p local6.notice -t installer "app-graphical-console-core - auto-configure reset"
     mkdir /var/clearos/graphical_console/backup/$TIMESTAMP
     mv /etc/X11/xorg.conf.d/* /var/clearos/graphical_console/backup/$TIMESTAMP
 fi
 
-if [ ! -f /etc/X11/xorg.conf.d/* ]; then
+if [ ! -f /etc/X11/xorg.conf.d/vm.conf ]; then
     logger -p local6.notice -t installer "app-graphical-console-core - performing auto-configure"
-    /usr/bin/Xorg -configure
-    mv /root/xorg.conf.new /etc/X11/xorg.conf.d/vm.conf
+    /usr/bin/Xorg -configure 2> /dev/null
+    [ -f /root/xorg.conf.new ] && mv /root/xorg.conf.new /etc/X11/xorg.conf.d/vm.conf
 fi
