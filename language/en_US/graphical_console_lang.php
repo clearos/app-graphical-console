@@ -2,7 +2,7 @@
 
 $lang['graphical_console_app_description'] = 'The Graphical Console allows administrators to configure basic settings in a user-friendly graphical environment';
 $lang['graphical_console_app_name'] = 'Graphical Console';
-$lang['graphical_console_browser_warning_help'] = 'When you connect with your web browser the first time, you will see a security warning displayed.  Please don\'t fret!';
+$lang['graphical_console_browser_warning_help'] = 'When you connect with your web browser the first time, you will see a security warning displayed.  Please do not fret!';
 $lang['graphical_console_browser_warning'] = 'Web Browser Security Warning';
 $lang['graphical_console_command_line'] = 'Command Line';
 $lang['graphical_console_command_line_help'] = 'For those of you who prefer the command line, you can jump right in by hitting the exit button.';
