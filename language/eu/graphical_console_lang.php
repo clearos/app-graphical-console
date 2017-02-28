@@ -1,6 +1,6 @@
 <?php
 
-$lang['graphical_console_app_description'] = 'The Graphical Console allows administrators to configure basic settings in a user-friendly graphical environment';
+$lang['graphical_console_app_description'] = 'Grafikoa kontsola ahalbidetzen administratzaileak oinarrizko ezarpenak konfiguratzeko erabiltzaileak errespetatzen ingurune grafiko batean';
 $lang['graphical_console_app_name'] = 'grafikoa Console';
 $lang['graphical_console_browser_warning_help'] = 'Noiz konektatu dituzu zure nabigatzailean-rekin lehen aldiz, segurtasun abisu bat bistaratuko ikusiko duzu. Mesedez, ez kezkatu!';
 $lang['graphical_console_browser_warning'] = 'Web Browser segurtasuna Abisua';
