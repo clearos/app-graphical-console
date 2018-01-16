@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# FIXME: tconsole should use new path
+# TODO tconsole should use new path
 if [ ! -e /usr/sbin/iptraf ]; then
     ln -sf /usr/sbin/iptraf-ng /usr/bin/iptraf
 fi
