@@ -1,7 +1,7 @@
 
 Name: app-graphical-console
 Epoch: 1
-Version: 2.3.22
+Version: 2.4.0
 Release: 1%{dist}
 Summary: Graphical Console
 License: GPLv3
@@ -28,6 +28,43 @@ Requires: urw-fonts
 Requires: xorg-x11-drivers
 Requires: xorg-x11-server-Xorg
 Requires: xorg-x11-xinit
+Requires: google-noto-kufi-arabic-fonts
+Requires: google-noto-sans-armenian-fonts
+Requires: google-noto-sans-bengali-fonts
+Requires: google-noto-sans-bengali-ui-fonts
+Requires: google-noto-sans-devanagari-fonts
+Requires: google-noto-sans-devanagari-ui-fonts
+Requires: google-noto-sans-georgian-fonts
+Requires: google-noto-sans-gujarati-fonts
+Requires: google-noto-sans-gujarati-ui-fonts
+Requires: google-noto-sans-gurmukhi-fonts
+Requires: google-noto-sans-gurmukhi-ui-fonts
+Requires: google-noto-sans-hebrew-fonts
+Requires: google-noto-sans-kannada-fonts
+Requires: google-noto-sans-kannada-ui-fonts
+Requires: google-noto-sans-khmer-fonts
+Requires: google-noto-sans-khmer-ui-fonts
+Requires: google-noto-sans-korean-fonts
+Requires: google-noto-sans-lao-fonts
+Requires: google-noto-sans-lao-ui-fonts
+Requires: google-noto-sans-malayalam-fonts
+Requires: google-noto-sans-malayalam-ui-fonts
+Requires: google-noto-sans-myanmar-fonts
+Requires: google-noto-sans-myanmar-ui-fonts
+Requires: google-noto-sans-simplified-chinese-fonts
+Requires: google-noto-sans-sinhala-fonts
+Requires: google-noto-sans-tamil-fonts
+Requires: google-noto-sans-tamil-ui-fonts
+Requires: google-noto-sans-telugu-fonts
+Requires: google-noto-sans-telugu-ui-fonts
+Requires: google-noto-sans-thai-fonts
+Requires: google-noto-sans-thai-ui-fonts
+Requires: google-noto-serif-armenian-fonts
+Requires: google-noto-serif-georgian-fonts
+Requires: google-noto-serif-khmer-fonts
+Requires: google-noto-serif-lao-fonts
+Requires: google-noto-serif-thai-fonts
+Requires: google-noto-serif-fonts
 
 %description core
 The Graphical Console allows administrators to configure basic settings in a user-friendly graphical environment
