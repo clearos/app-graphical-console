@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'graphical_console';
-$app['version'] = '2.4.1';
+$app['version'] = '2.4.2';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';

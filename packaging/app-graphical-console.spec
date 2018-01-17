@@ -1,7 +1,7 @@
 
 Name: app-graphical-console
 Epoch: 1
-Version: 2.4.0
+Version: 2.4.2
 Release: 1%{dist}
 Summary: Graphical Console
 License: GPLv3
@@ -20,7 +20,7 @@ Summary: Graphical Console - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
-Requires: clearos-console
+Requires: clearos-console >= 7.4.0
 Requires: dbus-x11
 Requires: gconsole
 Requires: ratpoison
