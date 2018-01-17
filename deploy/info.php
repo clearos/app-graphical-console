@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'graphical_console';
-$app['version'] = '2.4.0';
+$app['version'] = '2.4.1';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -36,7 +36,7 @@ $app['requires'] = array(
 );
 
 $app['core_requires'] = array(
-    'clearos-console',
+    'clearos-console >= 7.4.0',
     'dbus-x11',
     'gconsole',
     'ratpoison',
